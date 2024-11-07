@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 import ProductDetailsPage from "./pages/ProductDetailsPage.jsx";
+import EventsPage from "./pages/EventsPage.jsx";
 
 const routeConfig = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const routeConfig = createBrowserRouter([
       {
         index: true,
         element: <ProductDetailsPage />,
+      },
+      {
+        path: "events",
+        element: <EventsPage />,
       },
     ],
   },
