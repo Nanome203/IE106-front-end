@@ -75,7 +75,7 @@ function Logo() {
   );
 }
 
-export default function App() {
+export default function Layout() {
   return (
     <div className="flex flex-col">
       <header>
@@ -91,6 +91,7 @@ export default function App() {
               <input
                 type="search"
                 className="h-10 w-full rounded-s-full px-5 outline-none"
+                placeholder="Search here"
               />
               <i className="fa-solid fa-magnifying-glass flex h-10 cursor-pointer items-center justify-center rounded-e-full bg-gray-300 p-3 text-xl hover:bg-gray-500 hover:text-white active:bg-gray-700"></i>
             </div>
