@@ -67,10 +67,10 @@ function Logo() {
   return (
     <div className="flex items-center gap-1">
       <img
-        className="w-20 rounded-full"
+        className="w-14 rounded-full"
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Hj4y2s5GbHXpbYcy92sY-0Tg-NEmbfSq-Q&s"
       />
-      <span className="font-[Oswald] text-5xl">TechMart</span>
+      <span className="font-[Oswald] text-3xl">TechMart</span>
     </div>
   );
 }
@@ -78,8 +78,8 @@ function Logo() {
 export default function Layout() {
   return (
     <div className="flex flex-col">
-      <header>
-        <div id="utilities" className="flex h-32 w-screen bg-[#87CDD8]">
+      <header className="sticky top-0">
+        <div id="utilities" className="flex h-24 w-screen bg-[#87CDD8]">
           <div id="logo-wrapper" className="h-full w-1/3 p-5">
             <Logo />
           </div>
@@ -102,13 +102,13 @@ export default function Layout() {
           >
             <button
               type="button"
-              className="h-16 w-32 rounded-xl bg-[#3B5384] text-white hover:bg-[#1e325a] active:bg-[#1e396e]"
+              className="h-12 w-24 rounded-xl bg-[#3B5384] text-white hover:bg-[#1e325a] active:bg-[#1e396e]"
             >
               Cart
             </button>
             <button
               type="button"
-              className="mr-6 h-16 w-32 rounded-xl bg-[#3B5384] text-white hover:bg-[#1e325a] active:bg-[#1e396e]"
+              className="mr-10 h-12 w-24 rounded-xl bg-[#3B5384] text-white hover:bg-[#1e325a] active:bg-[#1e396e]"
             >
               Account
             </button>
@@ -116,7 +116,7 @@ export default function Layout() {
         </div>
         <div
           id="categories"
-          className="flex h-40 w-screen items-center justify-evenly py-20"
+          className="flex h-28 w-screen items-center justify-evenly bg-white"
         >
           {categories.map((categoriesItem) => (
             <CategoryPanel
@@ -127,9 +127,6 @@ export default function Layout() {
           ))}
         </div>
       </header>
-      {/* <h1 className="mb-10 text-[100px] font-bold text-red-700">
-        Hello world!
-      </h1> */}
       <Outlet />
       <footer className="flex min-h-56 w-screen flex-col items-center justify-center gap-1 bg-[#87CDD8] py-10">
         <div id="information" className="flex w-screen justify-center gap-24">
